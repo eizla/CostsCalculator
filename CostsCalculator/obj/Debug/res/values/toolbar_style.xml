@@ -1,0 +1,1 @@
+<resources><style name="WhiteToolBarColor" parent="ThemeOverlay.AppCompat.Dark.ActionBar"><item name="android:textColorPrimary">#FFF</item></style></resources>

@@ -1,0 +1,1 @@
+<menu tools:context=".MainActivity" android:background="#FFF" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"><item android:id="@+id/info" android:showAsAction="never" android:title="Info" /></menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/WhiteToolBarColor"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Thank you for using our app!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="40dp"
+        android:textColor="#607D8B"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text="AUTHORS:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        androidLtextSize="30dp"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:textColor="#455A64"
+        android:id="@+id/textView2" />
+    <Button
+        android:text="JAN GÓRSKI"
+        androidLtextSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#455A64"
+        android:layout_margin="6dp"
+        android:id="@+id/buttonJan" 
+        android:color="@android:color/transparent"/>
+    <Button
+        android:text="JAKUB PIEKARZ"
+        androidLtextSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#455A64"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:id="@+id/buttonJakub"
+        android:color="@android:color/transparent"/>
+    <Button
+        android:text="SEBASTIAN PUSTELNK"
+        androidLtextSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:textColor="#455A64"
+        android:id="@+id/buttonSebastian"
+        android:color="@android:color/transparent"/>
+    <Button
+        android:text="JOANNA ZIELIŃSKA"
+        androidLtextSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#455A64"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:id="@+id/buttonJoanna"
+        android:color="@android:color/transparent"/>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/WhiteToolBarColor"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout1">
+                <TextView
+                    android:id="@+id/textView1"
+                    android:padding="10dp"
+                    android:text="Enter Name: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/editTextName"
+                    android:layout_toRightOf="@id/textView1" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:padding="10dp"
+                    android:text="StartDate: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@id/textView1" />
+                <Button
+                    android:text="CHOOSE DATE"
+                    android:layout_margin="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:id="@+id/buttonStartDate"
+                    android:layout_below="@id/editTextName"
+                    android:layout_toRightOf="@id/textView2" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:padding="10dp"
+                    android:text="EndDate: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@id/textView2" />
+                <Button
+                    android:text="CHOOSE DATE"
+                    android:layout_margin="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:padding="10dp"
+                    android:id="@+id/buttonEndDate"
+                    android:layout_below="@id/buttonStartDate"
+                    android:layout_toRightOf="@id/textView3" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:padding="10dp"
+                    android:text="Description: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@id/textView3" />
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_margin="10dp"
+                    android:id="@+id/editTextDescription"
+                    android:padding="10dp"
+                    android:layout_below="@id/buttonEndDate"
+                    android:layout_toRightOf="@id/textView4" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:padding="10dp"
+                    android:text="Choose friends: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@id/textView4" />
+                <Spinner
+                    android:id="@+id/spinnerFriends"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_margin="10dp"
+                    android:prompt="@string/prompt"
+                    android:padding="10dp"
+                    android:layout_below="@id/editTextDescription"
+                    android:layout_toRightOf="@id/textView5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#818181"
+            android:dividerHeight="1dp"
+            android:id="@+id/listViewFriends" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

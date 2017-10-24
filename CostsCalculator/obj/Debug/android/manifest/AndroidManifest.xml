@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="CostsCalculator.CostsCalculator" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="CostsCalculator" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="History trips" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.HistoryTripsActivity" />
+    <activity android:label="Info" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.InfoActivity" />
+    <activity android:label="My friends" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.MyFriendsActivity" />
+    <activity android:label="Find friend" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.FriendsActivity" />
+    <activity android:label="HOME" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.HomeActivity1" />
+    <activity android:icon="@drawable/icon" android:label="CostsCalculator" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5222bb4525de4892e43048eb47d29dc9b.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Payment" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.PaymentActivity" />
+    <activity android:label="Add Payment" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.PaymentAddActivity" />
+    <activity android:label="Profile" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.ProfileActivity" />
+    <activity android:label="Settings" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.SettingsActivity" />
+    <activity android:label="Trip" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.TripActivity" />
+    <activity android:label="Trip" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.TripAddPageActivity" />
+    <activity android:label="Trips" android:theme="@style/MyTheme" android:name="md5222bb4525de4892e43048eb47d29dc9b.TripsActivity" />
+    <activity android:label="Web Authenticator" android:name="md5cf3ae8ac6a7ea1c4e3722f02812b18e1.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5cf3ae8ac6a7ea1c4e3722f02812b18e1.WebAuthenticatorActivity" />
+    <activity android:label="Sign in" android:name="md553a2c26e32f0b8c506a9fd8851ec5db2.AuthenticationAgentActivity" />
+    <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CostsCalculator.CostsCalculator.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.CostsCalculator.CostsCalculator" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+</manifest>
